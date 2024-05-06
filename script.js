@@ -61,3 +61,21 @@ modalImages.forEach(function (image) {
     modalOverlay.style.display = "flex";
   });
 });
+
+// Récupérer le bouton "Voir Plus"
+const moreButton = document.querySelector(".more");
+// Récupérer le bouton aboutContent
+const aboutContent = document.getElementById("aboutContent");
+
+moreButton.addEventListener("click", function () {
+  // Basculer la visibilité du contenu supplémentaire en ajoutant ou en supprimant la classe "visible"
+  aboutContent.classList.toggle("visible");
+
+  // Modifier le texte du bouton en fonction de la visibilité du contenu
+  if (aboutContent.classList.contains("visible")) {
+    moreButton.textContent = "Voir moins";
+  } else {
+    moreButton.textContent = "Voir plus";
+  }
+});
+

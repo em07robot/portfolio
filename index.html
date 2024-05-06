@@ -7,7 +7,7 @@
     <title>My Portfolio</title>
   </head>
   <body>
-    <header>
+    <header id="navbar">
       <nav>
         <ul>
           <li><a href="#bio">Bio</a></li>
@@ -20,12 +20,41 @@
     <main>
       <section id="bio">
         <h2>About Me</h2>
-        <img id="myImage" src="images/me.jpg" alt="img" /><br />
-        <p>
-          Je m'appel <strong>Mamadou Bah</strong> je suis pentester <br />L'ordi
-          c'est mon ring je combat avec le code
-        </p>
-        <button class="more" onclick="detailsPage()">voir plus</button>
+        <div id="about">
+          <img id="myImage" src="images/me.jpg" alt="img" /><br />
+          <p>
+            Je m'appelle <strong>Mamadou Bah</strong>, je suis pentester.
+            <br />L'ordi c'est mon ring, je combat avec le code.
+          </p>
+        </div>
+        <div id="aboutContent">
+          <p>
+            Je suis un étudiant autodidacte passionné par la cybersécurité. Mon
+            parcours d'apprentissage autonome m'a conduit à explorer diverses
+            plateformes en ligne telles que
+            <a href="https://tryhackme.com/p/em07robot">TryHackMe</a>,
+            <a href="https://app.hackthebox.com/profile/1529749">Hack The Box</a
+            >, <a href="https://cryptohack.org/user/em07_robot/">Cryptohack</a>,
+            PortSwigger et d'autres où j'ai acquis des compétences solides dans
+            le domaine de la sécurité informatique. Ces expériences m'ont permis
+            de développer une expertise pratique dans la résolution de problèmes
+            et l'exploitation des failles de sécurité, ainsi qu'une solide
+            éthique de travail et une passion pour l'apprentissage continu.
+          </p>
+          <p>
+            Sur TryHackMe, j'ai plongé dans l'univers captivant des machines
+            virtuelles vulnérables, tandis que Hack The Box m'a offert des défis
+            plus complexes avec des systèmes réels à pirater. PortSwigger m'a
+            permis de perfectionner mes compétences en sécurité des applications
+            web, tandis que Cryptohack a stimulé mon intellect avec des défis de
+            cryptographie intrigants. À travers ces plateformes, j'ai acquis une
+            compréhension approfondie des principes fondamentaux de la
+            cybersécurité et développé une mentalité de résolution de
+            problèmes.L'une des plateformes qui m'a fait aimer les CTF est
+            <a href="https://ctflearn.com/user/em07robot">CTFlearn</a>
+          </p>
+        </div>
+        <button class="more">voir plus</button>
       </section>
       <section id="experience">
         <h2>Work Experience</h2>
@@ -79,11 +108,6 @@
     <footer>
       <p>&copy; 2024 My Portfolio</p>
     </footer>
-    <script>
-      function detailsPage() {
-        window.location.href = "details.html";
-      }
-    </script>
     <script src="./script.js"></script>
   </body>
 </html>
