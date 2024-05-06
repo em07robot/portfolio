@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#bio">Bio</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="bio">
+        <h2>About Me</h2>
+        <img id="myImage" src="images/me.jpg" alt="img" /><br />
+        <p>
+          Je m'appel <strong>Mamadou Bah</strong> je suis pentester <br />L'ordi
+          c'est mon ring je combat avec le code
+        </p>
+        <button class="more" onclick="detailsPage()">voir plus</button>
+      </section>
+      <section id="experience">
+        <h2>Work Experience</h2>
+        <ul>
+          <li>CTFer chez WWF (world wide flags)</li>
+          <li>CTFer chez fsociety</li>
+        </ul>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <p>
+          En tant que CTFer avec l'équipe WWF (World Wide Flags) et fsociety,
+          j'ai acquis une expérience précieuse dans le domaine de la sécurité
+          informatique et du piratage éthique. Travailler au sein de cette
+          équipe dynamique m'a permis de développer mes compétences en
+          résolution de problèmes, en analyse des vulnérabilités et en
+          exploitation des failles de sécurité. Nous avons collaboré sur divers
+          projets de sécurité, effectué des audits de sécurité et participé à de
+          nombreux CTF (Capture The Flag) de renommée internationale.
+        </p>
+        <p>
+          Ci-dessous, vous trouverez des images de certains de mes certificats
+          et récompenses de CTF, illustrant ma participation et mes performances
+          exceptionnelles dans ces compétitions. Ces images témoignent de mon
+          engagement envers l'apprentissage continu, ma passion pour la sécurité
+          informatique et ma capacité à relever des défis techniques avec succès
+        </p>
+        <div class="img-crt">
+          <img class="modal" src="images/crt_ctf_apporv.png" alt="crt_apoorv" />
+          <img
+            class="modal"
+            src="images/crt_ctf_codefest.png"
+            alt="crt_codefest"
+          />
+          <img class="modal" src="images/crt_ctf_vishwa.jpg" alt="crt_vishwa" />
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" required />
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required />
+          <label for="message">Message:</label>
+          <textarea name="message" id="message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 My Portfolio</p>
+    </footer>
+    <script>
+      function detailsPage() {
+        window.location.href = "details.html";
+      }
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>

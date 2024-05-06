@@ -1,0 +1,164 @@
+/* Style général */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style de l'en-tête */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Style pour la barre de navigation */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Style pour l'image de profil */
+#myImage {
+  width: 150px;
+  height: 200px;
+  border-radius: 30%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#experience {
+  text-align: center;
+}
+
+#experience ul {
+  list-style-type: none;
+}
+
+/* Style pour la section des compétences */
+#skills {
+  text-align: center; /* Centrer le texte à l'intérieur de la section */
+}
+
+/* Style pour le titre "Skills" */
+#skills h2 {
+  margin-bottom: 20px; /* Marge inférieure pour séparer le titre des compétences */
+}
+
+/* Style pour les paragraphes de description */
+#skills p {
+  margin-bottom: 20px; /* Marge inférieure pour séparer les paragraphes */
+}
+
+/* Style pour la zone des images de certificats */
+#skills .img-crt {
+  display: flex;
+  justify-content: center; /* Centrer les images horizontalement */
+  flex-wrap: wrap; /* Permettre le retour à la ligne des images si nécessaire */
+}
+
+/* Style pour chaque image de certificat */
+#skills .img-crt img {
+  width: 200px; /* Taille des images */
+  height: auto; /* Hauteur automatique pour conserver les proportions */
+  margin: 10px; /* Marge autour de chaque image */
+}
+
+/* Style pour le modal */
+.modal {
+  cursor: pointer;
+}
+
+/* Style pour l'overlay du modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Couleur de fond semi-transparente */
+  display: none; /* Caché par défaut */
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease; /* Transition douce de l'opacité */
+}
+
+/* Style pour l'image agrandie dans le modal */
+.modal-content {
+  max-width: 80%; /* Taille maximale de l'image agrandie */
+  max-height: 80%; /* Hauteur maximale de l'image agrandie */
+  transition: transform 0.3s ease; /* Transition douce de la transformation */
+}
+
+/* Style pour le bouton de fermeture du modal */
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: #fff;
+  transition: opacity 0.3s ease; /* Transition douce de l'opacité */
+}
+#contact h2 {
+  text-align: center;
+}
+/* Style de base pour le formulaire de contact */
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Style pour les étiquettes dans le formulaire */
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Style pour les champs de saisie dans le formulaire */
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box; /* Inclure le rembourrage et la bordure dans la largeur et la hauteur */
+}
+
+/* Style pour le bouton d'envoi dans le formulaire de contact */
+#contact-form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #333; /* Couleur de fond */
+  color: #fff; /* Couleur du texte */
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Style pour le bouton d'envoi au survol */
+#contact-form button[type="submit"]:hover {
+  background-color: #555; /* Couleur de fond au survol */
+}
