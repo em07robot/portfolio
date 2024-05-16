@@ -13,14 +13,14 @@ html {
 header {
   background-color: #333;
   color: #fff;
-  padding: 10px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Style pour la barre de navigation */
 nav ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -35,14 +35,37 @@ nav ul li a:hover {
   background-color: #555;
 }
 
+.logo {
+  min-width: 100px;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.profile {
+  flex: 1;
+}
+
 /* Style pour l'image de profil */
 #myImage {
   width: 150px;
   height: 200px;
-  border-radius: 30%;
+  border-radius: 10%;
   overflow: hidden;
   object-fit: cover;
   margin-right: 20px;
+}
+
+.description {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+  margin-right: 10%;
 }
 
 .more {
@@ -64,7 +87,6 @@ nav ul li a:hover {
 
 /* Style pour le contenu supplémentaire */
 #aboutContent {
-  flex: 2;
   display: none;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -72,6 +94,7 @@ nav ul li a:hover {
 
 #aboutContent.visible {
   display: block;
+  width: auto;
   opacity: 1;
 }
 
@@ -91,14 +114,16 @@ nav ul li a:hover {
 /* Style pour la section "Skills" */
 #skills {
   text-align: center;
-}
-
-#skills h2 {
   margin-bottom: 20px;
 }
 
 #skills p {
   margin-bottom: 20px;
+}
+#skillsContent {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 #skills .img-crt {
@@ -195,5 +220,34 @@ nav ul li a:hover {
 }
 
 footer {
-  margin-top: 20px;
+  background-color: #efefef;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+.icons {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons a {
+  text-decoration: none;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #333;
+  border-radius: 50%;
+  color: #333;
+  font-size: 18px;
+}
+
+.icons a:hover {
+  background-color: rgba(5, 5, 5, 0.2);
 }

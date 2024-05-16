@@ -17,7 +17,7 @@ form.addEventListener("submit", function (event) {
     return;
   }
 
-  alert("Message sent!");
+  alert("server down");
 });
 
 // Sélectionnez toutes les images avec la classe "modal"
@@ -78,4 +78,3 @@ moreButton.addEventListener("click", function () {
     moreButton.textContent = "Voir plus";
   }
 });
-

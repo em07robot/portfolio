@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
-    <title>My Portfolio</title>
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.min.css" />
+    <title>em07robot</title>
   </head>
   <body>
     <header id="navbar">
+      <div class="logo">
+        Mr<span style="color: red; font-size: 30px">.</span>Robot &#x1f916;
+      </div>
       <nav>
         <ul>
           <li><a href="#bio">Bio</a></li>
@@ -21,40 +25,48 @@
       <section id="bio">
         <h2>About Me</h2>
         <div id="about">
-          <img id="myImage" src="images/me.jpg" alt="img" /><br />
-          <p>
-            Je m'appelle <strong>Mamadou Bah</strong>, je suis pentester.
-            <br />L'ordi c'est mon ring, je combat avec le code.
-          </p>
+          <div class="profile">
+            <img class="modal" id="myImage" src="images/me.jpg" alt="img" />
+          </div>
+          <div class="description">
+            <p>
+              Je m'appelle <strong>Mamadou Bah</strong>, je suis pentester.
+              <br />L'ordi c'est mon ring, je combat avec le code.
+            </p>
+            <div id="aboutContent">
+              <p>
+                Je suis un étudiant autodidacte passionné par la cybersécurité.
+                Mon parcours d'apprentissage autonome m'a conduit à explorer
+                diverses plateformes en ligne telles que
+                <a href="https://tryhackme.com/p/em07robot">TryHackMe</a>,
+                <a href="https://app.hackthebox.com/profile/1529749"
+                  >Hack The Box</a
+                >,
+                <a href="https://cryptohack.org/user/em07_robot/">Cryptohack</a
+                >, PortSwigger et d'autres où j'ai acquis des compétences
+                solides dans le domaine de la sécurité informatique. Ces
+                expériences m'ont permis de développer une expertise pratique
+                dans la résolution de problèmes et l'exploitation des failles de
+                sécurité, ainsi qu'une solide éthique de travail et une passion
+                pour l'apprentissage continu.
+              </p>
+              <p>
+                Sur TryHackMe, j'ai plongé dans l'univers captivant des machines
+                virtuelles vulnérables, tandis que Hack The Box m'a offert des
+                défis plus complexes avec des systèmes réels à pirater.
+                PortSwigger m'a permis de perfectionner mes compétences en
+                sécurité des applications web, tandis que Cryptohack a stimulé
+                mon intellect avec des défis de cryptographie intrigants. À
+                travers ces plateformes, j'ai acquis une compréhension
+                approfondie des principes fondamentaux de la cybersécurité et
+                développé une mentalité de résolution de problèmes.L'une des
+                plateformes qui m'a fait aimer les CTF est
+                <a href="https://ctflearn.com/user/em07robot">CTFlearn</a>
+              </p>
+            </div>
+            <button class="more">voir plus</button>
+          </div>
         </div>
-        <div id="aboutContent">
-          <p>
-            Je suis un étudiant autodidacte passionné par la cybersécurité. Mon
-            parcours d'apprentissage autonome m'a conduit à explorer diverses
-            plateformes en ligne telles que
-            <a href="https://tryhackme.com/p/em07robot">TryHackMe</a>,
-            <a href="https://app.hackthebox.com/profile/1529749">Hack The Box</a
-            >, <a href="https://cryptohack.org/user/em07_robot/">Cryptohack</a>,
-            PortSwigger et d'autres où j'ai acquis des compétences solides dans
-            le domaine de la sécurité informatique. Ces expériences m'ont permis
-            de développer une expertise pratique dans la résolution de problèmes
-            et l'exploitation des failles de sécurité, ainsi qu'une solide
-            éthique de travail et une passion pour l'apprentissage continu.
-          </p>
-          <p>
-            Sur TryHackMe, j'ai plongé dans l'univers captivant des machines
-            virtuelles vulnérables, tandis que Hack The Box m'a offert des défis
-            plus complexes avec des systèmes réels à pirater. PortSwigger m'a
-            permis de perfectionner mes compétences en sécurité des applications
-            web, tandis que Cryptohack a stimulé mon intellect avec des défis de
-            cryptographie intrigants. À travers ces plateformes, j'ai acquis une
-            compréhension approfondie des principes fondamentaux de la
-            cybersécurité et développé une mentalité de résolution de
-            problèmes.L'une des plateformes qui m'a fait aimer les CTF est
-            <a href="https://ctflearn.com/user/em07robot">CTFlearn</a>
-          </p>
-        </div>
-        <button class="more">voir plus</button>
       </section>
       <section id="experience">
         <h2>Work Experience</h2>
@@ -65,23 +77,27 @@
       </section>
       <section id="skills">
         <h2>Skills</h2>
-        <p>
-          En tant que CTFer avec l'équipe WWF (World Wide Flags) et fsociety,
-          j'ai acquis une expérience précieuse dans le domaine de la sécurité
-          informatique et du piratage éthique. Travailler au sein de cette
-          équipe dynamique m'a permis de développer mes compétences en
-          résolution de problèmes, en analyse des vulnérabilités et en
-          exploitation des failles de sécurité. Nous avons collaboré sur divers
-          projets de sécurité, effectué des audits de sécurité et participé à de
-          nombreux CTF (Capture The Flag) de renommée internationale.
-        </p>
-        <p>
-          Ci-dessous, vous trouverez des images de certains de mes certificats
-          et récompenses de CTF, illustrant ma participation et mes performances
-          exceptionnelles dans ces compétitions. Ces images témoignent de mon
-          engagement envers l'apprentissage continu, ma passion pour la sécurité
-          informatique et ma capacité à relever des défis techniques avec succès
-        </p>
+        <div id="skillsContent">
+          <p>
+            En tant que CTFer avec l'équipe WWF (World Wide Flags) et fsociety,
+            j'ai acquis une expérience précieuse dans le domaine de la sécurité
+            informatique et du piratage éthique. Travailler au sein de ces
+            équipes dynamiques m'a permis de développer mes compétences en
+            résolution de problèmes, en analyse des vulnérabilités et en
+            exploitation des failles de sécurité. Nous avons collaboré sur
+            divers projets de sécurité, effectué des audits de sécurité et
+            participé à de nombreux CTF (Capture The Flag) de renommée
+            internationale.
+          </p>
+          <p>
+            Ci-dessous, vous trouverez des images de certains de mes certificats
+            et récompenses de CTF, illustrant ma participation et mes
+            performances exceptionnelles dans ces compétitions. Ces images
+            témoignent de mon engagement envers l'apprentissage continu, ma
+            passion pour la sécurité informatique et ma capacité à relever des
+            défis techniques avec succès
+          </p>
+        </div>
         <div class="img-crt">
           <img class="modal" src="images/crt_ctf_apporv.png" alt="crt_apoorv" />
           <img
@@ -107,6 +123,17 @@
     </main>
     <footer>
       <p>&copy; 2024 My Portfolio</p>
+      <div class="icons">
+        <a href="https://www.facebook.com/em07robot">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/em07robot/">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/224627866652">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
     </footer>
     <script src="./script.js"></script>
   </body>
